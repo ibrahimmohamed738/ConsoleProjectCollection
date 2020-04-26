@@ -19,6 +19,7 @@ namespace GenerateUserID
         public string GenerateBillID()
         {
             string BillId = "BL" + DateTime.Now.ToString("yyMMddhhmmssfffff");
+            //string BillId = "BTRF" + DateTime.Now.Ticks.ToString().Substring(0, 10);
             return BillId;
             //return Guid.NewGuid().ToString("N");
         }
