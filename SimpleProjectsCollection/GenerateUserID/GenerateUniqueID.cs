@@ -11,15 +11,15 @@ namespace GenerateUserID
 
         public string GenerateUserID ()
         {
-            string UserId = "UR" + DateTime.Now.ToString("yyMMddhhmmssfffff");
+            string UserId = $"UR{DateTime.Now.ToString("yyMMddhhmmssfffff")}";
             return UserId;
             //return Guid.NewGuid().ToString("N");
         }
 
         public string GenerateBillID()
         {
-            string BillId = "BL" + DateTime.Now.ToString("yyMMddhhmmssfffff");
-            //string BillId = "BTRF" + DateTime.Now.Ticks.ToString().Substring(0, 10);
+            string BillId = $"BL{DateTime.Now.ToString("hhmmssfffff")}";
+            //string BillId = $"BL{DateTime.Now.Ticks.ToString().Substring(0, 10)}";
             return BillId;
             //return Guid.NewGuid().ToString("N");
         }
